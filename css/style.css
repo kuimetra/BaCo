@@ -87,12 +87,12 @@ body{
 /*Header styles start*/
 
 .header{
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
     border-radius: 0 0 0 0;
-    background: rgba(220, 220, 220, 0.8);
+    background: rgba(220, 220, 220, 0.6);
     padding-bottom: 20px;
 }
 
@@ -202,8 +202,7 @@ body{
    font-size: 34px;
    text-align: center;
    color: #444444;
-   padding-top: 1px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
    white-space: pre-line;
 }
 .yellow_bar{
@@ -235,7 +234,7 @@ body{
 }
 .green_bar{
     position: absolute;
-    margin-top: 400px;
+    margin-top: 370px;
     width: 350px;
     height: 250px;
     left: 180px;
@@ -245,7 +244,7 @@ body{
 }
 .blue_bar{
     position: absolute;
-    margin-top: 400px;
+    margin-top: 370px;
     width: 350px;
     height: 250px;
     left: 590px;
@@ -255,7 +254,7 @@ body{
 }
 .purple_bar{
     position: absolute;
-    margin-top: 400px;
+    margin-top: 370px;
     width: 350px;
     height: 250px;
     left: 1000px;
@@ -263,7 +262,7 @@ body{
     filter: drop-shadow(0px 8px 25px rgba(68, 68, 68, 0.25));
     border-radius: 50px 50px 50px 50px;
 }
-.description_y{
+.banana{
     position: absolute;
     width: 253px;
     height: 90px;
@@ -276,10 +275,23 @@ body{
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.05em;
-
     color: #333333;
 }
-.description_o{
+.description_y{
+    position: absolute;
+    width: 253px;
+    height: 90px;
+    left: 225px;
+    margin-top: 285px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.mango{
     position: absolute;
     width: 253px;
     height: 90px;
@@ -294,12 +306,55 @@ body{
     letter-spacing: 0.05em;
     color: #333333;
 }
-.description_p{
+.description_o{
     position: absolute;
     width: 253px;
     height: 90px;
-    left: 1045px;
+    left: 635px;
+    margin-top: 285px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.passion{
+    position: absolute;
+    width: 353px;
+    height: 90px;
+    left: 1010px;
     margin-top: 260px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+.description_p{
+    position: absolute;
+    width: 353px;
+    height: 90px;
+    left: 1010px;
+    margin-top: 285px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.pistachio{
+    position: absolute;
+    width: 253px;
+    height: 90px;
+    left: 225px;
+    margin-top: 630px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -314,7 +369,21 @@ body{
     width: 253px;
     height: 90px;
     left: 225px;
-    margin-top: 660px;
+    margin-top: 655px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.blueberry{
+    position: absolute;
+    width: 353px;
+    height: 90px;
+    left: 595px;
+    margin-top: 630px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -326,10 +395,24 @@ body{
 }
 .description_b{
     position: absolute;
-    width: 253px;
+    width: 353px;
     height: 90px;
-    left: 635px;
-    margin-top: 660px;
+    left: 595px;
+    margin-top: 655px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.grape{
+    position: absolute;
+    width: 353px;
+    height: 90px;
+    left: 1010px;
+    margin-top: 630px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -341,24 +424,162 @@ body{
 }
 .description_pu{
     position: absolute;
-    width: 253px;
+    width: 353px;
     height: 90px;
-    left: 1045px;
-    margin-top: 660px;
+    left: 1010px;
+    margin-top: 655px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 17px;
-    line-height: 32px;
+    line-height: 29px;
     text-align: center;
-    letter-spacing: 0.05em;
     color: #333333;
 }
 .special{
   height: 818px;
   left: 0px;
-    font-family: Montserrat;
   background: #EBEBEC;
   background-size: cover;
+    background-image: url(../img/special_editionsfront.png);
+    width: 620px;
 }
-
+.lime{
+    position: absolute;
+    width: 251px;
+    height: 58px;
+    left: 38px;
+    top: 2248px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.coconut{
+    position: absolute;
+    width: 251px;
+    height: 58px;
+    left: 320px;
+    top: 2690px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #333333;
+}
+.edition{
+    height: 818px;
+  width: 898px;
+    margin-left: 620px;
+    padding-bottom: 818px;
+  background: #EBEBEC;
+}
+.s_ed{
+    position: absolute;
+    width: 620px;
+    height: 643px;
+    left: 788px;
+    top: 2233px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 51px;
+    color: #444444;
+}
+.describe_s{
+    position: absolute;
+    width: 620px;
+    height: 643px;
+    left: 788px;
+    top: 2303px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.lime_ginger{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 788px;
+    top: 2483px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+}
+.describe_l_g{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 975px;
+    top: 2483px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.continue{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 788px;
+    top: 2515px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.raspberry{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 788px;
+    top: 2599px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+}
+.describe_r{
+    position: absolute;
+    width: 525px;
+    height: 643px;
+    left: 990px;
+    top: 2599px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.c_r{
+    position: absolute;
+    width: 525px;
+    height: 643px;
+    left: 788px;
+    top: 2631px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
