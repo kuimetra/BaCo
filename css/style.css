@@ -92,7 +92,7 @@ body{
   left: 0;
   width: 100%;
     border-radius: 0 0 0 0;
-    background: rgba(220, 220, 220, 0.6);
+    background: rgba(220, 220, 220, 0.8);
     padding-bottom: 20px;
 }
 
@@ -449,7 +449,7 @@ body{
     width: 251px;
     height: 58px;
     left: 38px;
-    top: 2248px;
+    top: 2325px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -463,7 +463,7 @@ body{
     width: 251px;
     height: 58px;
     left: 320px;
-    top: 2690px;
+    top: 2770px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -582,4 +582,164 @@ body{
     font-size: 21px;
     line-height: 32px;
     color: #555555;
+}
+.coffee{
+    width: 700px;
+    height: 671px;
+    padding-left: 0px;
+    margin-left: 0px;
+    top: 2900px;
+    background: #F2F2F2
+}
+.c_t{
+    position: absolute;
+    width: 620px;
+    height: 643px;
+    left: 103px;
+    top: 3010px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 51px;
+    color: #444444;
+}
+.latte{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3080px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+}
+.caramel{
+   position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 252px;
+    top: 3080px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.describe_latte{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3110px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.macchiato{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3235px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+}
+.ma{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 220px;
+    top: 3235px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.describe_ma{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3265px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.flat{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3390px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: #333333;
+}
+.white{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 218px;
+    top: 3390px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.flat_white{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3420px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #555555;
+}
+.topping{
+    position: absolute;
+    width: 540px;
+    height: 643px;
+    left: 104px;
+    top: 3520px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #555555;
+}
+.coffee_time{
+    position: absolute;
+    width: 830px;
+    height: 671px;
+    left: 688px;
+    top: 2979px;
+    background-size: cover;
+    background-image: url(../img/coffee.png);
 }
