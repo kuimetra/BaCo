@@ -431,3 +431,57 @@ a.bars{
     font-weight: 500;
     color: #333333;
 }
+
+.coffee{
+    height: 618px;
+    left: 0px;
+    font-family: Montserrat;
+    background: #EFEFEF;
+    background-size: cover;
+}
+
+.cup{
+    position: relative;
+    height: 618px;
+    left: 576px;
+    /*background: no-repeat center;*/
+    background-size: cover;
+    width: 750px;
+}
+
+.coffee_time{
+    position: relative;
+    width: 620px;
+    height: 643px;
+    left: -260px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 51px;
+    text-align: center;
+    top: -580px;
+    color: #444444;
+}
+
+.types{
+    position: relative;
+    width: 620px;
+    height: 643px;
+    left: -60px;
+    top: -1150px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    white-space: pre-line;
+    font-size: 21px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.topping{
+    /*white-space: pre-line;*/
+    font-size: 16px;
+    line-height: 15px;
+    color: #666666;
+}
