@@ -443,10 +443,10 @@ a.bars{
 .cup{
     position: relative;
     height: 618px;
-    left: 576px;
+    left: 476px;
     /*background: no-repeat center;*/
     background-size: cover;
-    width: 750px;
+    width: 850px;
 }
 
 .coffee_time{
