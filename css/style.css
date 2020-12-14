@@ -134,8 +134,8 @@ body {
 
 .intro__title {
     font-weight: bold;
-    font-size: 37px;
-    line-height: 51px;
+    font-size: 34px;
+    line-height: 41px;
     font-family: Montserrat;
     text-align: center;
     color: #444444;
@@ -164,6 +164,7 @@ body {
 .additional_intro__title {
     font-weight: 600;
     font-size: 34px;
+    line-height: 41px;
     font-family: Montserrat;
     text-align: center;
     color: #444444;
@@ -174,6 +175,7 @@ body {
 .additional_intro__subtitle {
     font-weight: 400;
     font-size: 19px;
+    line-height: 23px;
     font-family: Montserrat;
     text-align: center;
     color: #555555;
@@ -191,8 +193,8 @@ body {
 .our_assortment {
     font-weight: 600;
     font-size: 34px;
+    line-height: 41px;
     text-align: center;
-    /*left: 15px;*/
     color: #444444;
     padding-bottom: 35px;
     white-space: pre-line;
@@ -258,9 +260,11 @@ body {
 }
 
 a.bars{
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0.05em;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    /* letter-spacing: 0.05em; */
+    color: #333333;
 }
 
 .banana {
@@ -272,8 +276,8 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -281,15 +285,15 @@ a.bars{
 
 .mango {
     position: relative;
-    width: 253px;
+    width: 300px;
     height: 90px;
-    left: 445px;
+    left: 425px;
     margin-top: -110px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -304,8 +308,8 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -320,8 +324,8 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -336,8 +340,8 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -352,8 +356,8 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     white-space: pre-line;
     color: #333333;
@@ -369,11 +373,10 @@ a.bars{
 
 .se_img {
     position: relative;
-    height: 818px;
     left: -190px;
-    /*background: no-repeat center;*/
     background-size: cover;
-    width: 620px;
+    width: 618px;
+    height: 824px;
 }
 
 .s_ed {
@@ -387,7 +390,7 @@ a.bars{
     font-size: 37px;
     line-height: 51px;
     text-align: center;
-    top: -810px;
+    top: -760px;
     color: #444444;
 }
 
@@ -400,23 +403,23 @@ a.bars{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 29px;
-    /*white-space: pre-line;*/
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     color: #333333;
 }
+
 .coconut{
     position: relative;
     width: 251px;
     height: 58px;
     left: 125px;
-    top: -270px;
+    top: -260px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 29px;
+    font-size: 19px;
+    line-height: 23px;
     text-align: center;
     color: #333333;
 }
@@ -426,18 +429,20 @@ a.bars{
     width: 620px;
     height: 643px;
     left: 590px;
-    top: -1380px;
+    top: -1330px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     white-space: pre-line;
     font-size: 21px;
-    line-height: 30px;
+    line-height: 26px;
     color: #555555;
 }
 
 .lime_ginger{
     font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
     color: #333333;
 }
 
@@ -452,10 +457,9 @@ a.bars{
 .cup{
     position: relative;
     height: 618px;
-    left: 476px;
-    /*background: no-repeat center;*/
+    left: 503px;
     background-size: cover;
-    width: 850px;
+    width: 824px;
 }
 
 .coffee_time{
@@ -469,7 +473,7 @@ a.bars{
     font-size: 37px;
     line-height: 51px;
     text-align: center;
-    top: -580px;
+    top: -550px;
     color: #444444;
 }
 
@@ -478,19 +482,19 @@ a.bars{
     width: 620px;
     height: 643px;
     left: -60px;
-    top: -1150px;
+    top: -1120px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     white-space: pre-line;
     font-size: 21px;
-    line-height: 30px;
+    line-height: 26px;
     color: #555555;
 }
 
 .topping{
-    font-size: 16px;
-    line-height: 15px;
+    font-size: 17px;
+    line-height: 21px;
     color: #666666;
 }
 
@@ -541,7 +545,7 @@ article img{
 #switch3:checked ~ #controls label:nth-child(2){
 	background: url('../img/svg/arrow_back.svg') no-repeat;
 	float: left;
-	margin: -220px 0 90px -84px;
+	margin: -172px 0 90px -84px;
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -552,7 +556,7 @@ article img{
 #switch5:checked ~ #controls label:nth-child(1){
 	background: url('../img/svg/arrow_forward.svg') no-repeat;
 	float: right;
-	margin: -210px -84px 90px 0;
+	margin: -172px -84px 90px 0;
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -604,22 +608,23 @@ label, a{
 }
 
 .mi{
-  font-weight: 600;
+    font-weight: 600;
     font-size: 34px;
+    line-height: 41px;
     text-align: center;
     color: #444444;
     padding-top: 40px;
 }
 
 .text{
-    width: 620px;
+    width: 700px;
     margin: 0 auto;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     white-space: pre-line;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 21px;
+    line-height: 26px;
     color: #555555;
     text-align: center;
     padding-top: 10px;
@@ -646,8 +651,11 @@ label, a{
 
 a.adv{
     font-weight: 500;
-    line-height: 32px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
     font-family: Montserrat;
+    color: #444444;
 }
 
 .dairy_free{
@@ -683,9 +691,9 @@ a.adv{
     margin-top: 10px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     white-space: pre-line;
     color: #555555;
@@ -700,8 +708,8 @@ a.adv{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     white-space: pre-line;
     color: #555555;
@@ -716,8 +724,8 @@ a.adv{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     white-space: pre-line;
     color: #555555;
@@ -732,8 +740,8 @@ a.adv{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     white-space: pre-line;
     color: #555555;
@@ -746,8 +754,8 @@ a.adv{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     white-space: pre-line;
     color: #666666;
 }
@@ -828,4 +836,74 @@ a.adv{
     font-size: 16px;
     line-height: 19px;
     color: #F2F2F2;
+}
+
+.vodafone_caption{
+    position: relative;
+    width: 77px;
+    height: 20px;
+    left: 377px;
+    margin-top: -30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+}
+
+.kyivstar_caption{
+    position: relative;
+    width: 77px;
+    height: 20px;
+    left: 700px;
+    margin-top: -60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+}
+
+.bacooffline{
+    height: 480px;
+    left: 0px;
+    background: #EBEBEC;
+    background-size: cover;
+}
+
+.caffe_img{
+    position: relative;
+    left: -190px;
+    background-size: cover;
+}
+
+.bacooffline__title {
+    position: relative;
+    width: 620px;
+    height: 643px;
+    left: 466px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: -437px;
+    color: #444444;
+}
+
+.bacooffline__text{
+    position: relative;
+    left: 672px;
+    width: 600px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 22px;
+    line-height: 27px;
+    white-space: pre-line;
+    margin-top: -603px;
+    color: #555555;
 }
