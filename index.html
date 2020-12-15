@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $(".header__nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
 
 <style>
     ::-webkit-scrollbar {
@@ -30,6 +42,14 @@
     ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(#BED3D3, #F2D8CE, #E2D8B0);
     }
+
+    .header {  /* селектор блока, который будет оставаться на месте */
+        position: fixed;
+        z-index: 101;
+    }
+    /*html {*/
+    /*    scroll-behavior: smooth;*/
+    /*}*/
 </style>
 
 <body>
@@ -45,22 +65,22 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="" class="header__link">Про нас</a>
+                        <a href="#intro__title" class="header__link">Про нас</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Меню</a>
+                        <a href="#our_assortment" class="header__link">Меню</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Заклад</a>
+                        <a href="#bacooffline__title" class="header__link">Заклад</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Галерея</a>
+                        <a href="#instagram" class="header__link">Галерея</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Ми на карті</a>
+                        <a href="#welcome_to_us" class="header__link">Ми на карті</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Замовити</a>
+                        <a href="#connect_us" class="header__link">Замовити</a>
                     </li>
                 </ul>
             </nav>
@@ -71,7 +91,7 @@
 <main class="main">
     <section class="intro">
         <div class="wrapper">
-            <h1 class="intro__title">
+            <h1 id="intro__title">
                 Натуральні батончики
                 з найкращих інградієнтів зі всього світу!
             </h1>
@@ -99,7 +119,7 @@
 
     <section class="assortment">
         <div class="wrapper">
-            <h1 class="our_assortment">
+            <h1 id="our_assortment">
                 Наш асортимент
             </h1>
             <img src="./img/yellowfront.png" width="300" height="200" alt="" class="yellow_bar">
@@ -254,26 +274,28 @@
         </div>
     </section>
 
-       <section class="order_now">
-            <div class="wrapper">
-                <h1 class="order_now__title">
-                    Замовляй продукцію Ba&Co вже зараз!
-                </h1>
-                <div class="vodafone">
-                   <img src="./img/svg/white_phone_icon.svg" width="19" height="19" alt="" class="vodafone_phone_icon">
-                     <p class="vodafone_phone_number">+380 (66) 342 14 90</p>
-                </div>
-                <div class="kyivstar">
-                    <img src="./img/svg/white_phone_icon.svg" width="19" height="19" alt="" class="kyivstar_phone_icon">
-                     <p class="kyivstar_phone_number">+380 (96) 050 12 03 </p>
-                </div>
+    <section class="order_now">
+        <div class="wrapper">
+            <h1 class="order_now__title">
+                Замовляй продукцію Ba&Co вже зараз!
+            </h1>
+            <div class="vodafone">
+                <img src="./img/svg/white_phone_icon.svg" width="19" height="19" alt="" class="vodafone_phone_icon">
+                <p class="vodafone_phone_number">+380 (66) 342 14 90</p>
             </div>
-        </section>
+            <div class="kyivstar">
+                <img src="./img/svg/white_phone_icon.svg" width="19" height="19" alt="" class="kyivstar_phone_icon">
+                <p class="kyivstar_phone_number">+380 (96) 050 12 03 </p>
+            </div>
+            <p class="vodafone_caption">Vodafone</p>
+            <p class="kyivstar_caption">Kyivstar</p>
+        </div>
+    </section>
 
     <section class="bacooffline">
         <div class="wrapper">
             <img src="./img/caffe.png" width="720" height="480" alt="" class="caffe_img">
-            <h1 class="bacooffline__title">
+            <h1 id="bacooffline__title">
                 Ba&Co offline
             </h1>
             <p class="bacooffline__text">
@@ -283,7 +305,7 @@
                 в самому серці Києва.
                 Ідеальне місце для сніданку чи обідньої
                 перерви. Також є можливість взяти каву
-                з собою в наших фірмових еко кружках.
+                з собою в наших фірмових еко чашках.
 
                 На честь відкриття, найкреативніша ідея
                 сторіс в інстаграм отримає від наc безкоштовний
@@ -297,47 +319,47 @@
             <h1 class="reviews">Відгуки наших клієнтів</h1>
             <div class="all1">
                 <input checked type="radio" name="respond" id="desktop1">
-                 <article id="slider1">
+                <article id="slider1">
                     <input checked type="radio" name="slider1" id="switch4">
                     <input type="radio" name="slider1" id="switch5">
                     <input type="radio" name="slider1" id="switch6">
-                     <div id="slides1">
+                    <div id="slides1">
                         <div id="overflow1">
                             <div class="circle">
                                 <article>
-<!--                                    <div class="circle1">-->
-                                        <p class="reviews1"><a class="people">Інна Бондаренко</a>
+                                    <!--                                    <div class="circle1">-->
+                                    <p class="reviews1"><a class="people">Інна Бондаренко</a>
 
-                                         “Мої діти і я справжні фанати вашої продукції. Саме те, що потрібно
+                                        “Мої діти і я справжні фанати вашої продукції. Саме те, що потрібно
                                         для вдалого початку дня. Рекомендую всім! Особливо раджу лімітовану версію
-                                                           батончиків та флет вайт ;)”
-                                        </p>
-<!--                                    </div>-->
+                                        батончиків та флет вайт ;)”
+                                    </p>
+                                    <!--                                    </div>-->
                                 </article>
                                 <article>
-<!--                                    <div class="circle1">-->
-                                        <p class="reviews1"><a class="people">Олег Коваленко</a>
+                                    <!--                                    <div class="circle1">-->
+                                    <p class="reviews1"><a class="people">Олег Коваленко</a>
 
-                                         “Спочатку дуже сумнівався чи замовляти, але після того як скуштував, зрозумів,
-                                                 що ці батончики вкрали моє серце. Замовляйте не пошкудуєте)”
-                                        </p>
-<!--                                    </div>-->
+                                        “Спочатку дуже сумнівався чи замовляти, але після того як скуштував, зрозумів,
+                                        що ці батончики вкрали моє серце. Замовляйте не пошкудуєте)”
+                                    </p>
+                                    <!--                                    </div>-->
                                 </article>
                                 <article>
-<!--                                     <div class="circle1">-->
-                                         <p class="reviews1"><a class="people">Володимир Бойко</a>
+                                    <!--                                     <div class="circle1">-->
+                                    <p class="reviews1"><a class="people">Володимир Бойко</a>
 
                                         “Займаюся спортом вже 2 роки. Замовляв різні корисні батончики, але ніякі
-                                                  не зрівняються з Ba&Co. Це однозначно лідери на ринку.
+                                        не зрівняються з Ba&Co. Це однозначно лідери на ринку.
                                         Їх мікси просто знахідка - підійдуть всім і кожному на будь-який смак.
                                         А ще мак’ято дуже смачне. В їхньому кафе готують найкращу каву в місті”
-                                         </p>
-<!--                                     </div>-->
+                                    </p>
+                                    <!--                                     </div>-->
                                 </article>
                             </div>
                         </div>
-                     </div>
-                      <div id="controls1">
+                    </div>
+                    <div id="controls1">
                         <label for="switch4"></label>
                         <label for="switch5"></label>
                         <label for="switch6"></label>
@@ -347,56 +369,60 @@
                         <label for="switch5"></label>
                         <label for="switch6"></label>
                     </div>
-                 </article>
+                </article>
             </div>
         </div>
     </section>
     <section class="inst">
         <div class="wrapper">
-            <h1 class="instagram">Instagram <u>@bars.and.coffee</u></h1>
-            <img src="./img/ig1.png" width="300" height="180" alt="" class="macbook">
-            <img src="./img/ig2.png" width="300" height="180" alt="" class="baars">
-            <img src="./img/ig3.png" width="300" height="180" alt="" class="card">
+            <h1 id="instagram">Instagram <u>@bars.and.coffee</u></h1>
+            <img src="./img/ig1.png" width="280" height="186" alt="" class="macbook">
+            <img src="./img/ig2.png" width="280" height="186" alt="" class="baars">
+            <img src="./img/ig3.png" width="280" height="186" alt="" class="card">
         </div>
     </section>
     <section class="welcome">
         <div class="wrapper">
-            <h1 class="welcome_to_us">Заходьте до нас в гості!</h1>
+            <h1 id="welcome_to_us">Заходьте до нас в гості!</h1>
             <img src="./img/map2.png" width="570" alt="" height="494" class="map">
             <p class="coordinates"><a class="address">Адреса</a>:
                 вул. Антоновича, буд. 58
                 Київ, Україна
 
-                <a class="address"> Графік роботи</a>:
+                <a class="address">Графік роботи</a>:
                 Пн - Чт: 8 – 18
                 Пт - Нд: 11 – 18
 
-               <a class="address">Номери телефонів</a>:
+                <a class="address">Номери телефонів</a>:
                 +380 (66) 342 14 90
                 +380 (96) 050 12 03
 
                 <a class="address">E-mail</a>:
                 bars.and.coffee@gmail.com</p>
-            <img src="./img/svg/facebook.svg" width="25" alt="" height="25" class="face">
-            <img src="./img/svg/instagram.svg" width="25" alt="" height="25" class="picture_inst">
-            <img src="./img/svg/youtube.svg" width="25" alt="" height="25" class="youtube">
+            <img src="./img/svg/facebook.svg" width="29" alt="" height="29" class="face">
+            <img src="./img/svg/instagram.svg" width="29" alt="" height="29" class="picture_inst">
+            <img src="./img/svg/youtube.svg" width="29" alt="" height="29" class="youtube">
         </div>
     </section>
     <section class="login">
         <div class="wrapper">
             <div class="connect">
-                <h1 class="connect_us">Зв’яжіться з нами
+                <h1 id="connect_us">Зв’яжіться з нами
                     для замовлення</h1>
                 <form action="/" method="">
-                    <p class="name1"> Ім'я</p>
+                    <p class="name1">Ім'я</p>
                     <input type="text" name="name" placeholder="Андрій" class="name">
                     <p class="name1">Номер телефону</p>
-                    <input type="text" name="number" placeholder="+380 (xx) xxx xx xx" class="name">
-                     <p class="name1">Опції замовлення</p>
-                    <input type="text" name="log" placeholder="" class="name">
+                    <input type="text" name="number" placeholder="+380 (98) 765 43 21" class="name">
+                    <p class="name1">Опції замовлення</p>
+                    <select name="option" class="name">с
+                        <option>Choose</option>
+                        <option>take away</option>
+                        <option>courier</option>
+                    </select>
                     <p class="name1">Опишіть ваше замовленя</p>
-                    <input type="text" name="log" placeholder="" class="name">
-                    <input type="submit" name="Замовити" class="send">
+                    <input type="text" name="log" placeholder="exotic mix and coffee" class="name">
+                    <input type="submit" value="Замовити" class="send">
                 </form>
             </div>
         </div>

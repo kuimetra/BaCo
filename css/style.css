@@ -78,7 +78,7 @@ body {
     left: 0;
     width: 100%;
     border-radius: 0 0 0 0;
-    background: rgba(220, 220, 220, 0.6);
+    background: rgba(220, 220, 220, 0.9);
     padding-bottom: 20px;
 }
 
@@ -115,6 +115,9 @@ body {
     opacity: .75;
 }
 
+.header__link:visited{
+    color: #777777;
+}
 
 /*Header styles end*/
 
@@ -132,7 +135,7 @@ body {
     width: 1518px;
 }
 
-.intro__title {
+#intro__title {
     font-weight: bold;
     font-size: 34px;
     line-height: 41px;
@@ -148,7 +151,7 @@ body {
     line-height: 22px;
     font-family: Montserrat;
     text-align: center;
-    color: #555555;
+    color: #454545;
     white-space: pre-line;
 }
 
@@ -190,7 +193,7 @@ body {
     background-size: cover;
 }
 
-.our_assortment {
+#our_assortment {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -777,7 +780,7 @@ a.adv {
     white-space: pre-line;
 }
 
-.vodafone{
+.vodafone {
     left: 306px;
     width: 216px;
     padding-top: 1.5px;
@@ -787,10 +790,9 @@ a.adv {
     margin-top: 30px;
 }
 
-.kyivstar{
+.kyivstar {
     left: 630px;
     width: 216px;
-    /*height: 5px;*/
     padding-top: 1.5px;
     background: #444444;
     border-radius: 8px;
@@ -798,27 +800,23 @@ a.adv {
     margin-top: -38.5px;
 }
 
-.vodafone_phone_icon{
+.vodafone_phone_icon {
     left: 17px;
     position: relative;
-    top: 5px;
-    /*margin-top: 103px;*/
+    top: 8px;
 }
 
-.kyivstar_phone_icon{
+.kyivstar_phone_icon {
     left: 20px;
-    /*margin-top: -46px;*/
     position: relative;
-    top: 5px;
+    top: 8px;
 }
 
-.vodafone_phone_number{
+.vodafone_phone_number {
     position: relative;
     width: 192px;
-    top: -13px;
-    /*height: 24px;*/
-    left: 43px;
-    /*margin-top: -150px;*/
+    top: -11px;
+    left: 47px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -827,13 +825,11 @@ a.adv {
     color: #F2F2F2;
 }
 
-.kyivstar_phone_number{
+.kyivstar_phone_number {
     position: relative;
     width: 192px;
-    /*height: 24px;*/
-    top: -13px;
-    left: 45px;
-    /*margin-top: -65px;*/
+    top: -11px;
+    left: 48px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -845,9 +841,8 @@ a.adv {
 .vodafone_caption {
     position: relative;
     width: 77px;
-    height: 20px;
-    left: 377px;
-    margin-top: -30px;
+    left: 384px;
+    top: 5px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -860,8 +855,8 @@ a.adv {
     position: relative;
     width: 77px;
     height: 20px;
-    left: 700px;
-    margin-top: -60px;
+    left: 714px;
+    top: -11px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -883,7 +878,7 @@ a.adv {
     background-size: cover;
 }
 
-.bacooffline__title {
+#bacooffline__title {
     position: relative;
     width: 620px;
     height: 643px;
@@ -894,7 +889,7 @@ a.adv {
     font-size: 30px;
     line-height: 41px;
     text-align: center;
-    margin-top: -437px;
+    top: -437px;
     color: #444444;
 }
 
@@ -908,10 +903,11 @@ a.adv {
     font-size: 21px;
     line-height: 26px;
     white-space: pre-line;
-    margin-top: -603px;
+    top: -1025px;
     color: #555555;
 }
-.comment{
+
+.comment {
     height: 470px;
     left: 0px;
     font-family: Montserrat;
@@ -955,7 +951,7 @@ a.adv {
 /*    margin-bottom: 50px;*/
 /*}*/
 
-article p.reviews1{
+article p.reviews1 {
     width: 900px;
     margin: 0 auto;
     font-family: Montserrat;
@@ -1042,23 +1038,26 @@ label, a {
     transition: opacity 0.2s ease-out;
 }
 
-.reviews{
+.reviews {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
-    text-align: center;
+    margin-left: 368px;
+    /* text-align: center; */
     color: #444444;
     padding-top: 80px;
 }
 
-a.people{
+a.people {
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: -21px;
     white-space: pre-line;
     color: #555555;
 }
+
 /*.circle1{*/
 /*    left: 406px;*/
 /*    width: 130px;*/
@@ -1086,14 +1085,15 @@ a.people{
 /*    margin-left: -380px;*/
 /*}*/
 
-.inst{
+.inst {
     height: 480px;
     left: 0px;
     font-family: Montserrat;
     background: #DCDCDC;
     background-size: cover;
 }
-.instagram{
+
+#instagram {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -1101,30 +1101,33 @@ a.people{
     color: #444444;
     padding-top: 65px;
 }
-.macbook{
+
+.macbook {
     position: relative;
     top: 70px;
-    left: -27px;
+    left: 10px;
 }
 
-.baars{
+.baars {
     position: relative;
     top: 70px;
-    left: 120px;
+    left: 154px;
 }
 
-.card{
+.card {
     position: relative;
     top: 70px;
-    left: 267px;
+    left: 296px;
 }
-.welcome{
+
+.welcome {
     height: 725px;
     left: 0px;
     background: #F2F2F2;
     background-size: cover;
 }
-.welcome_to_us{
+
+#welcome_to_us {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -1132,46 +1135,51 @@ a.people{
     color: #444444;
     padding-top: 65px;
 }
-.map{
+
+.map {
     position: relative;
     top: 45px;
     left: -90px;
 }
 
-.coordinates{
+.coordinates {
     position: relative;
     left: 725px;
-    width: 600px;
+    width: 500px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
+    font-size: 24px;
+    line-height: 30px;
     white-space: pre-line;
     margin-top: -440px;
     color: #555555;
 }
-a.address{
+
+a.address {
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 30px;
     white-space: pre-line;
-    color: #555555;
+    color: #444444;
 }
-.face{
+
+.face {
     position: relative;
     left: 725px;
     top: 43px;
 }
-.picture_inst{
+
+.picture_inst {
     position: relative;
-    left: 743px;
+    left: 745px;
     top: 43px;
 }
-.youtube{
+
+.youtube {
     position: relative;
-    left: 761px;
+    left: 765px;
     top: 43px;
 }
 
@@ -1186,16 +1194,19 @@ a.address{
     width: 1518px;
 }
 
+
 .connect{
     position: relative;
     width: 560px;
-    height: 700px;
+    height: 704px;
     left: 300px;
     top: 50px;
     background: #F2F2F2;
 }
 
-.connect_us{
+#connect_us{
+    width: 350px;
+    margin-left: 100px;
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -1208,30 +1219,44 @@ a.address{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 19px;
     color: #444444;
     left: 120px;
-    top: 45px;
+    top: 48px;
 }
 .name{
     position: relative;
-    width: 315px;
-    height: 44px;
+    width: 320px;
+    height: 40px;
     left: 120px;
     background: #DADADA;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 0px;
     top: 55px;
     margin-bottom: 30px;
+    text-indent: 10px;
+    color: #555555;
+    font-family: Montserrat;
 }
 
 .send{
     position: relative;
-    width: 149px;
-    height: 44px;
-    /*left: 1011px;*/
-    /*top: 10130px;*/
+    font-family: Montserrat;
+    width: 140px;
+    height: 40px;
+    left: -24px;
+    top: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    background: transparent;
+    border-color: #444444;
     background: #444444;
+    color: #F2F2F2;
+    border-style: solid;
     border-radius: 5px 5px 0px 5px;
+}
+.choose{
+    color: #F2F2F2;
 }
