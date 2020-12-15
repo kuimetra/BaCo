@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".header__nav").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 800);
+        });
+    });
+</script>
 
 <style>
     ::-webkit-scrollbar {
@@ -30,6 +42,11 @@
     ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(#BED3D3, #F2D8CE, #E2D8B0);
     }
+
+    .header {
+        position: fixed;
+        z-index: 101;
+    }
 </style>
 
 <body>
@@ -38,29 +55,28 @@
         <div class="header__wrapper">
             <div class="header__logo">
                 <a href="/" class="header__logo-link">
-                    <img src="./img/svg/baco-logo.svg" width="125" height="39" alt="" class="header__logo-pic">
+                    <img src="./img/svg/bacologo.svg" width="119" height="33" alt="" class="header__logo-pic">
                 </a>
             </div>
-
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="" class="header__link">Про нас</a>
+                        <a href="#intro__title" class="header__link">Про нас</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Меню</a>
+                        <a href="#our_assortment" class="header__link">Меню</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Заклад</a>
+                        <a href="#bacooffline__title" class="header__link">Заклад</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Галерея</a>
+                        <a href="#instagram" class="header__link">Галерея</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Ми на карті</a>
+                        <a href="#welcome_to_us" class="header__link">Ми на карті</a>
                     </li>
                     <li class="header__item">
-                        <a href="" class="header__link">Замовити</a>
+                        <a href="#connect_us" class="header__link">Замовити</a>
                     </li>
                 </ul>
             </nav>
@@ -71,7 +87,7 @@
 <main class="main">
     <section class="intro">
         <div class="wrapper">
-            <h1 class="intro__title">
+            <h1 id="intro__title">
                 Натуральні батончики
                 з найкращих інградієнтів зі всього світу!
             </h1>
@@ -99,7 +115,7 @@
 
     <section class="assortment">
         <div class="wrapper">
-            <h1 class="our_assortment">
+            <h1 id="our_assortment">
                 Наш асортимент
             </h1>
             <img src="./img/yellowfront.png" width="300" height="200" alt="" class="yellow_bar">
@@ -275,7 +291,7 @@
     <section class="bacooffline">
         <div class="wrapper">
             <img src="./img/caffe.png" width="720" height="480" alt="" class="caffe_img">
-            <h1 class="bacooffline__title">
+            <h1 id="bacooffline__title">
                 Ba&Co offline
             </h1>
             <p class="bacooffline__text">
@@ -307,26 +323,21 @@
                         <div id="overflow1">
                             <div class="circle">
                                 <article>
-                                    <!--                                    <div class="circle1">-->
                                     <p class="reviews1"><a class="people">Інна Бондаренко</a>
 
                                         “Мої діти і я справжні фанати вашої продукції. Саме те, що потрібно
                                         для вдалого початку дня. Рекомендую всім! Особливо раджу лімітовану версію
                                         батончиків та флет вайт ;)”
                                     </p>
-                                    <!--                                    </div>-->
                                 </article>
                                 <article>
-                                    <!--                                    <div class="circle1">-->
                                     <p class="reviews1"><a class="people">Олег Коваленко</a>
 
                                         “Спочатку дуже сумнівався чи замовляти, але після того як скуштував, зрозумів,
                                         що ці батончики вкрали моє серце. Замовляйте не пошкудуєте)”
                                     </p>
-                                    <!--                                    </div>-->
                                 </article>
                                 <article>
-                                    <!--                                     <div class="circle1">-->
                                     <p class="reviews1"><a class="people">Володимир Бойко</a>
 
                                         “Займаюся спортом вже 2 роки. Замовляв різні корисні батончики, але ніякі
@@ -334,7 +345,6 @@
                                         Їх мікси просто знахідка - підійдуть всім і кожному на будь-який смак.
                                         А ще мак’ято дуже смачне. В їхньому кафе готують найкращу каву в місті”
                                     </p>
-                                    <!--                                     </div>-->
                                 </article>
                             </div>
                         </div>
@@ -355,7 +365,7 @@
     </section>
     <section class="inst">
         <div class="wrapper">
-            <h1 class="instagram">Instagram <u>@bars.and.coffee</u></h1>
+            <h1 id="instagram">Instagram <u>@bars.and.coffee</u></h1>
             <img src="./img/ig1.png" width="280" height="186" alt="" class="macbook">
             <img src="./img/ig2.png" width="280" height="186" alt="" class="baars">
             <img src="./img/ig3.png" width="280" height="186" alt="" class="card">
@@ -363,7 +373,7 @@
     </section>
     <section class="welcome">
         <div class="wrapper">
-            <h1 class="welcome_to_us">Заходьте до нас в гості!</h1>
+            <h1 id="welcome_to_us">Заходьте до нас в гості!</h1>
             <img src="./img/map2.png" width="570" alt="" height="494" class="map">
             <p class="coordinates"><a class="address">Адреса</a>:
                 вул. Антоновича, буд. 58
@@ -387,7 +397,7 @@
     <section class="login">
         <div class="wrapper">
             <div class="connect">
-                <h1 class="connect_us">Зв’яжіться з нами
+                <h1 id="connect_us">Зв’яжіться з нами
                     для замовлення</h1>
                 <form action="/" method="">
                     <p class="name1">Ім'я</p>
@@ -395,9 +405,13 @@
                     <p class="name1">Номер телефону</p>
                     <input type="text" name="number" placeholder="+380 (98) 765 43 21" class="name">
                     <p class="name1">Опції замовлення</p>
-                    <input type="text" name="log" placeholder="" class="name">
+                    <select name="option" class="opt">с
+                        <option>choose</option>
+                        <option>take away</option>
+                        <option>courier</option>
+                    </select>
                     <p class="name1">Опишіть ваше замовленя</p>
-                    <input type="text" name="log" placeholder="" class="name">
+                    <input type="text" name="log" placeholder="exotic mix, 2 лате" class="name">
                     <input type="submit" value="Замовити" class="send">
                 </form>
             </div>
