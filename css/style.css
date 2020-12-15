@@ -1236,10 +1236,18 @@ a.address {
 
 .send{
     position: relative;
-    width: 149px;
-    height: 44px;
-    left: -33px;
+    font-family: Montserrat;
+    width: 140px;
+    height: 40px;
+    left: -24px;
     top: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    background: transparent;
+    border-color: #444444;
     background: #444444;
+    color: #F2F2F2;
+    border-style: solid;
     border-radius: 5px 5px 0px 5px;
 } 
