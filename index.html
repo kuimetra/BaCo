@@ -14,14 +14,14 @@
 </head>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".header__nav").on("click", "a", function (event) {
-            event.preventDefault();
-            var id = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('body,html').animate({scrollTop: top}, 800);
-        });
+ $(document).ready(function(){
+    $(".header__nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
     });
+});
 </script>
 
 <style>
@@ -55,9 +55,10 @@
         <div class="header__wrapper">
             <div class="header__logo">
                 <a href="/" class="header__logo-link">
-                    <img src="./img/svg/bacologo.svg" width="119" height="33" alt="" class="header__logo-pic">
+                    <img src="./img/svg/bacologo.svg" width="119" height="36" alt="" class="header__logo-pic">
                 </a>
             </div>
+
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
@@ -365,7 +366,7 @@
     </section>
     <section class="inst">
         <div class="wrapper">
-            <h1 id="instagram">Instagram <u>@bars.and.coffee</u></h1>
+            <h1 id="instagram">Instagram @<u>bars.and.coffee</u></h1>
             <img src="./img/ig1.png" width="280" height="186" alt="" class="macbook">
             <img src="./img/ig2.png" width="280" height="186" alt="" class="baars">
             <img src="./img/ig3.png" width="280" height="186" alt="" class="card">
@@ -405,8 +406,8 @@
                     <p class="name1">Номер телефону</p>
                     <input type="text" name="number" placeholder="+380 (98) 765 43 21" class="name">
                     <p class="name1">Опції замовлення</p>
-                    <select name="option" class="opt">с
-                        <option>choose</option>
+                    <select name="option" class="name">с
+                        <option>сhoose</option>
                         <option>take away</option>
                         <option>courier</option>
                     </select>

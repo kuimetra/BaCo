@@ -70,15 +70,12 @@ body {
     margin: 0 auto;
 }
 
-/*Header styles start*/
-
 .header {
-    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
     border-radius: 0 0 0 0;
-    background: rgba(220, 220, 220, 0.6);
+    background: rgba(220, 220, 220, 0.9);
     padding-bottom: 20px;
 }
 
@@ -115,11 +112,9 @@ body {
     opacity: .75;
 }
 
-
-/*Header styles end*/
-
-
-/*Intro styles start*/
+.header__link:visited{
+    color: #777777;
+}
 
 .intro {
     height: 750px;
@@ -132,10 +127,11 @@ body {
     width: 1518px;
 }
 
-.intro__title {
+#intro__title {
     font-weight: bold;
     font-size: 34px;
     line-height: 41px;
+    margin-top: 48px;
     font-family: Montserrat;
     text-align: center;
     color: #444444;
@@ -151,8 +147,6 @@ body {
     color: #454545;
     white-space: pre-line;
 }
-
-/*Intro styles end*/
 
 .additional_intro {
     height: 480px;
@@ -190,7 +184,7 @@ body {
     background-size: cover;
 }
 
-.our_assortment {
+#our_assortment {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -263,7 +257,6 @@ a.bars {
     font-weight: 500;
     font-size: 21px;
     line-height: 26px;
-    /* letter-spacing: 0.05em; */
     color: #333333;
 }
 
@@ -875,7 +868,7 @@ a.adv {
     background-size: cover;
 }
 
-.bacooffline__title {
+#bacooffline__title {
     position: relative;
     width: 620px;
     height: 643px;
@@ -936,17 +929,6 @@ a.adv {
     width: 100%;
     overflow: hidden;
 }
-
-/*article div.circle1 {*/
-/*      left: 206px;*/
-/*    width: 130px;*/
-/*    max-height: 130px;*/
-/*    !*padding-top: 120px;*!*/
-/*    background:  #F2F2F2;*/
-/*    border-radius: 360px;*/
-/*    !*position: absolute;*!*/
-/*    margin-bottom: 50px;*/
-/*}*/
 
 article p.reviews1 {
     width: 900px;
@@ -1040,7 +1022,6 @@ label, a {
     font-size: 34px;
     line-height: 41px;
     margin-left: 368px;
-    /* text-align: center; */
     color: #444444;
     padding-top: 80px;
 }
@@ -1055,33 +1036,6 @@ a.people {
     color: #555555;
 }
 
-/*.circle1{*/
-/*    left: 406px;*/
-/*    width: 130px;*/
-/*    max-height: 130px;*/
-/*    !*padding-top: 120px;*!*/
-/*    background:  #F2F2F2;*/
-/*    border-radius: 360px;*/
-/*    position: relative;*/
-/*    margin-bottom: 50px;*/
-/*}*/
-
-/*.reviews1{*/
-/*    !*position: relative;*!*/
-/*    width: 900px;*/
-/*    margin: 0 auto;*/
-/*    font-family: Montserrat;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    white-space: pre-line;*/
-/*    font-size: 21px;*/
-/*    line-height: 26px;*/
-/*    color: #555555;*/
-/*    text-align: center;*/
-/*    padding-top: 70px;*/
-/*    margin-left: -380px;*/
-/*}*/
-
 .inst {
     height: 480px;
     left: 0px;
@@ -1090,7 +1044,7 @@ a.people {
     background-size: cover;
 }
 
-.instagram {
+#instagram {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -1124,11 +1078,11 @@ a.people {
     background-size: cover;
 }
 
-.welcome_to_us {
+#welcome_to_us {
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
-    text-align: center;
+    margin-left: 367px;
     color: #444444;
     padding-top: 65px;
 }
@@ -1180,11 +1134,10 @@ a.address {
     top: 43px;
 }
 
-.login {
+.login{
     height: 800px;
     background: url(../img/order.png) no-repeat center;
     background-size: cover;
-    /*padding-top: 251px;*/
     position: center;
     margin-left: auto;
     margin-right: auto;
@@ -1192,7 +1145,7 @@ a.address {
 }
 
 
-.connect {
+.connect{
     position: relative;
     width: 560px;
     height: 704px;
@@ -1201,9 +1154,9 @@ a.address {
     background: #F2F2F2;
 }
 
-.connect_us {
+#connect_us{
     width: 350px;
-    margin-left: 100px;
+    margin-left: 106px;
     font-weight: 600;
     font-size: 34px;
     line-height: 41px;
@@ -1211,8 +1164,7 @@ a.address {
     color: #444444;
     padding-top: 85px;
 }
-
-.name1 {
+.name1{
     position: relative;
     font-family: Montserrat;
     font-style: normal;
@@ -1223,8 +1175,7 @@ a.address {
     left: 120px;
     top: 48px;
 }
-
-.name {
+.name{
     position: relative;
     width: 320px;
     height: 40px;
@@ -1234,9 +1185,12 @@ a.address {
     border: 0px;
     top: 55px;
     margin-bottom: 30px;
+    text-indent: 10px;
+    color: #757575;
+    font-family: Montserrat;
 }
 
-.send {
+.send{
     position: relative;
     font-family: Montserrat;
     width: 140px;
@@ -1244,7 +1198,7 @@ a.address {
     left: -24px;
     top: 150px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     background: transparent;
     border-color: #444444;
@@ -1252,4 +1206,7 @@ a.address {
     color: #F2F2F2;
     border-style: solid;
     border-radius: 5px 5px 0px 5px;
-} 
+}
+.choose{
+    color: #F2F2F2;
+}
